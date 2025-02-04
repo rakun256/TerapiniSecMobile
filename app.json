@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "TerapiniSecMobile",
+    "name": "TerapiniSeç",
     "slug": "TerapiniSecMobile",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -14,7 +14,7 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#E0EDF5"
       },
       "package": "com.emreuslu.TerapiniSecMobile"
     },
@@ -31,7 +31,7 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "backgroundColor": "#E0EDF5"
         }
       ]
     ],
