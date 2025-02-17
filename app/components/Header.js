@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity, SafeAreaView } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 import { faGear, faUser } from "@fortawesome/free-solid-svg-icons";
@@ -14,6 +14,7 @@ export default function Header() {
   const styles = createStyles(theme, headerFontSize, bodyFontSize);
 
   return (
+    <SafeAreaView>
     <View style={styles.header}>
       <TouchableOpacity
         style={styles.navItemSettings}
@@ -33,6 +34,7 @@ export default function Header() {
         <FontAwesomeIcon icon={faUser} size={24} style={styles.iconStyle} />
       </TouchableOpacity>
     </View>
+    </SafeAreaView>
   );
 }
 

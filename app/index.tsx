@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { View, StyleSheet, StatusBar } from "react-native";
+import { View, StyleSheet, StatusBar, SafeAreaView } from "react-native";
 import * as NavigationBar from 'expo-navigation-bar';
 
 import RootNavigator from "./routes/RootNavigator";
@@ -16,6 +16,7 @@ function ThemedApp() {
   }, [theme, isDarkMode]);
 
   return (
+    <SafeAreaView style={[styles.container, { backgroundColor: theme.backgroundLight }]}>
     <View style={[styles.container, { backgroundColor: theme.backgroundLight }]}>
       <StatusBar
         backgroundColor={theme.backgroundLight}
@@ -27,6 +28,7 @@ function ThemedApp() {
         </HomeScrollProvider>
       </AuthProvider>
     </View>
+    </SafeAreaView>
   );
 }
 

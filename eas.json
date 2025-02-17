@@ -23,8 +23,8 @@
         "buildType": "apk"
       },
       "ios": {
-        "buildType": "release",
-        "distribution": "app-store",
+        "simulator": true,
+        "distribution": "internal",
         "autoIncrement": true
       },
       "autoIncrement": true
